@@ -1,18 +1,18 @@
-import Navbar from  './components/Navbar'
-import Rightbar from './components/Rightbar'
-import Sidebar from './components/Sidebar'
-import Feed from './components/Feed'
-
+import Rightbar from "./components/Rightbar";
+import Sidebar from "./components/Sidebar";
+import Feed from "./components/Feed";
+import { Box } from "@mui/system";
+import { Stack } from "@mui/material";
 
 function App() {
   return (
-    <div >
-      <p> theplayer_9</p>
-      <Sidebar />
-      <Feed />
-      <Rightbar />
-      <Navbar />
-    </div>
+    <Box>
+      <Stack direction="row" spacing={2} justifyContent="center">
+        <Sidebar />
+        <Feed />
+        <Rightbar />
+      </Stack>
+    </Box>
   );
 }
 
