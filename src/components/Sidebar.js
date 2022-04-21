@@ -1,5 +1,5 @@
-import { AccountBox, Article, Group, Groups, Home, Person, Settings, Storefront } from "@mui/icons-material";
-import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
+import { AccountBox, Article, Group, Groups, Home, ModeNight, Person, Settings, Storefront } from "@mui/icons-material";
+import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from "@mui/material";
 import React from "react";
 
 const Sidebar = () => {
@@ -67,6 +67,15 @@ const Sidebar = () => {
             <ListItemText primary="Profile" />
           </ListItemButton>
         </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#List" >
+            <ListItemIcon>
+              <ModeNight />
+            </ListItemIcon>
+            <ListItemText primary="Dark mode" />
+            <Switch />
+          </ListItemButton>
+        </ListItem> 
       </List>
     </Box>
   );
